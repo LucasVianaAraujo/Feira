@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import './App.scss'
+import Camada1 from './Camada1.jsx'
+import Camada2 from './Camada2.jsx'
+import Camada3 from './Camada3.jsx'
+import Camada4 from './Camada4.jsx'
+import Camada5 from './Camada5.jsx'
+import './Camada1.scss'
+import './Camada2.scss'
+import './Camada3.scss'
+import './Camada4.scss'
+import './Camada5.scss'
 
 function App() {
-
   return (
-    <div className="topo">
-      <div className="separador">
-        <div className="lado_esquerdo">
-          <h1>DESCUBRA OS PROFISSIONAIS DO FUTURO</h1>
-          <div className="bloco"/>
-          <h3>No dia 27 de setembro, a Feira de Profissões 2025 do Instituto Social Nossa Senhora de Fátima conecta você a especialistas, oficinas e tendências para ajudar a encontrar sua vocação e planejar o futuro.</h3>
-          <button>INCREVER-SE</button>
-        </div>
-        <div className="lado_direito"></div>
-      </div>
+    <div>
+      <Camada1/>
+      <Camada2/>
+      <Camada3/>
+      <Camada4/>
+      <Camada5/>
     </div>
   )
 }
