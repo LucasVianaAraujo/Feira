@@ -2,7 +2,7 @@ export function Camada5() {
     return (
         <div className="fundo_colorido4">
             <div className="titulo">
-                <h1>VENHA VISITAR O INSTITUTO NO DIA 27/09 (QUARTA-FEIRA)</h1>
+                <h1>VENHA VISITAR O <span>INSTITUTO</span> NO DIA 27/09 (QUARTA-FEIRA)</h1>
             </div>
 
             <button>MARCAR PRESENÇA</button>

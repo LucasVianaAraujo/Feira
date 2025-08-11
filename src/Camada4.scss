@@ -7,71 +7,39 @@
 .fundo_colorido3 {
     display: flex;
     padding: 5vh;
+    justify-content: space-around;
     align-items: center;
     background-color: #23458B;
     height: 80vh;
     width: 100%;
-    flex-direction: column;
 
-    .alinhador {
+    .lado_esquerdo {
         display: flex;
-        width: 130vh;
-        justify-content: space-around;
-        gap: 5vh;
-    }
-
-    .caixa-imagem {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-
-        img {
-            width: 80vh;
-            height: 55vh;
-        }
-
-        h1 {
-            font-size: 1.5vh;
-            font-family: "Archivo Black", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-        }
-
-        h2 {
-            font-size: 2vh;
-            font-family: "Archivo Black", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-        }
-
-        .titulo {
-            display: flex;
-
-            h1 {
-                font-size: 5.4vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: white;
-            }
-        }
-    }
-
-    .elementos {
-        display: flex;
+        align-items: center;
         justify-content: center;
-        flex-direction: column;
-        gap: 3vh;
+        width: 50%;
+        height: 80vh;
+        background-color: red;
+    }
 
-        h1 {
-            color: white;
-            font-size: 4vh;
-            font-family: "Archivo Black", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-        }
+    h1 {
+        color: white;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 7vh;
+    }
+
+    span {
+        color: #F5BA53;
+    }
+
+    .lado_direito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 80vh;
+        background-color: aquamarine;
     }
 }
