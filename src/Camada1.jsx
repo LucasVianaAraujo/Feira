@@ -28,7 +28,7 @@ function App() {
         <div className="conexoes">
           <Link to={'Sobre'}><h1>SOBRE</h1></Link>
           <Link to={'Cursos'}><h1>CURSOS</h1></Link>
-          <button>CONTATO</button>
+          <Link to={'Contato'}><button>CONTATO</button></Link>
         </div>
       </div>
       <div className="separador">
