@@ -9,7 +9,6 @@ import 'swiper/css/navigation';
 
 import frei from './assets/frei.png'
 import instituto from './assets/instituto.webp'
-import Sobre from './Sobre.jsx';
 
 function App() {
 
@@ -28,7 +27,7 @@ function App() {
 
         <div className="conexoes">
           <Link to={'Sobre'}><h1>SOBRE</h1></Link>
-          <h1>CURSOS</h1>
+          <Link to={'Cursos'}><h1>CURSOS</h1></Link>
           <button>CONTATO</button>
         </div>
       </div>

@@ -38,12 +38,18 @@
             align-items: center;
             justify-content: center;
 
+            
             img {
                 width: 6vh;
                 height: 6vh;
             }
         }
-
+        .bloco_redes:hover {
+            background-color: rgb(177, 177, 177);
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        
         .direitos {
             display: flex;
 

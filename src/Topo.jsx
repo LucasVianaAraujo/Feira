@@ -1,0 +1,22 @@
+import { Link } from 'react-router';
+
+import frei from './assets/frei.png'
+
+export function Topo() {
+    return (
+            <div className="topo">
+                <div className="alinhar">
+                    <img src={frei} alt="" />
+                    <h4>INSTITUTO SOCIAL NOSSA SENHORA DE FÁTIMA</h4>
+                </div>
+
+                <div className="conexoes">
+                    <Link to={'Sobre'}><h1>SOBRE</h1></Link>
+                    <Link to={'Cursos'}><h1>CURSOS</h1></Link>
+                    <button>CONTATO</button>
+                </div>
+            </div>
+    )
+}
+
+export default Topo

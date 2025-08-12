@@ -1,0 +1,72 @@
+.topo {
+    display: flex;
+    height: 15vh;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh;
+    justify-content: space-between;
+
+    img {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    .alinhar {
+        display: flex;
+        margin-top: 1.8vh;
+    }
+
+    h4 {
+        display: flex;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.3vh;
+        width: 30vh;
+        color: #303261;
+        padding-top: 1.2vh;
+    }
+
+    .conexoes {
+        display: flex;
+        flex-direction: row;
+        gap: 10vh;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: #F5B11B;
+            transition: all 0.2s;
+        }
+
+        h1 {
+            font-size: 4vh;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        button {
+            font-size: 4vh;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            width: 35vh;
+            background-color: #F5B11B;
+            height: 10vh;
+            cursor: pointer;
+            outline: none;
+            border: 0.3vh black solid;
+            border-radius: 10vh;
+        }
+
+        button:hover {
+            background-color: #eba000;
+            transition: all 0.5s;
+        }
+    }
+}

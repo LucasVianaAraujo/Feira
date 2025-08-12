@@ -52,19 +52,20 @@
             }
 
             a:hover {
-                color: blue;
+                color: #F5B11B;
+                transition: all 0.2s;
             }
 
             h1 {
                 font-size: 4vh;
-                font-family: "Archivo Regular", sans-serif;
+                font-family: "Archivo Black", sans-serif;
                 font-weight: 400;
                 font-style: normal;
             }
 
             button {
                 font-size: 4vh;
-                font-family: "Archivo Regular", sans-serif;
+                font-family: "Archivo Black", sans-serif;
                 font-weight: 400;
                 font-style: normal;
                 width: 35vh;
@@ -119,6 +120,11 @@
             border-radius: 10vh;
             font-size: 3vh;
             cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #eba000;
+            transition: all 0.5s;
         }
 
         .bloco {
