@@ -8,13 +8,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import frei from './assets/frei.png'
-import instituto from './assets/instituto.webp'
+import frei_foto from './assets/frei foto.png'
+import reuniao from './assets/reuniao.png'
 
 function App() {
 
   const data = [
-    { id: '1', image: frei },
-    { id: '1', image: instituto }
+    { id: '1', image: frei_foto },
+    { id: '2', image: reuniao }
   ]
 
   return (

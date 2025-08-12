@@ -6,16 +6,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import frei from './assets/frei.png'
-import instituto from './assets/instituto.webp'
+import meninas_adm from './assets/adm.png'
+import informatica from './assets/info.png'
+import cv from './assets/paleta.png'
+import eletro from './assets/eletro.png'
+import robo from './assets/ilustrativa.png'
 
 function Camada3() {
 
     const data = [
-        { id: '1', image: frei, text: <div><h1>DESENVOLVEDORES</h1><h3>Descrição detalhada</h3></div> },
-        { id: '2', image: frei, text: <div><h1>ADMINISTRADORES</h1><h3>Descrição detalhada</h3></div> },
-        { id: '3', image: frei, text: <div><h1>DESIGNERS</h1><h3>Descrição detalhada</h3></div> },
-        { id: '4', image: frei, text: <div><h1>DESIGNERS</h1><h3>Descrição detalhada</h3></div> },
-        { id: '5', image: frei, text: <div><h1>DESIGNERS</h1><h3>Descrição detalhada</h3></div> }
+        { id: '1', image: informatica, text: <div><h1>DESENVOLVEDORES</h1><h3>Descrição detalhada</h3></div> },
+        { id: '2', image: meninas_adm, text: <div><h1>ADMINISTRADORES</h1><h3>Descrição detalhada</h3></div> },
+        { id: '3', image: cv, text: <div><h1>DESIGNERS</h1><h3>Descrição detalhada</h3></div> },
+        { id: '4', image: eletro, text: <div><h1>ELETROTÉCNICOS</h1><h3>Descrição detalhada</h3></div> },
+        { id: '5', image: robo, text: <div><h1>ROBÓTICA</h1><h3>Descrição detalhada</h3></div> }
     ]
 
     return (

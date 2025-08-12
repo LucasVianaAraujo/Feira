@@ -58,10 +58,15 @@
 
         .imagem {
             display: flex;
-            background-color: blue;
             align-items: center;
             height: 85vh;
             width: 50%;
+
+            img {
+                height: 85vh;
+                width: 100%;
+                z-index: 1;
+            }
         }
     }
 }

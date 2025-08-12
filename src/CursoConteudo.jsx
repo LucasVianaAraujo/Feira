@@ -1,3 +1,5 @@
+import adm from './assets/admin.png'
+
 function CursoConteudo() {
     return (
         <div className="fundo_colorido7">
@@ -19,7 +21,7 @@ function CursoConteudo() {
 
                 <div className="imagem">
 
-                    <h1>Oi</h1>
+                    <img src={adm} alt="" />
 
                 </div>
 

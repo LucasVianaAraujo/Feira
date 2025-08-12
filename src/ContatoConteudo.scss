@@ -9,4 +9,77 @@
     height: 85vh;
     width: 100%;
     background-color: #303261;
+    align-items: center;
+    justify-content: center;
+
+    .caixa_amarela {
+        display: flex;
+        background-color: #F5BA53;
+        width: 130vh;
+        height: 55vh;
+        padding: 5vh;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+        h1 {
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 6.5vh;
+            color: #303261;
+        }
+
+        h3 {
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 2.5vh;
+            color: #303261;
+        }
+    }
+
+    .alinhador {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 30vh;
+
+            h2 {
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 3.5vh;
+                color: #303261;
+            }
+
+            h3 {
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2.5vh;
+                color: #303261;
+            }
+        }
+
+        .localizacao {
+            display: flex;
+            width: 50%;
+            height: 30vh;
+        }
+
+    }
 }

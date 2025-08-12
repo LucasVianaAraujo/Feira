@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 import insta from './assets/instagram.png'
 import facebook from './assets/facebook.png'
 import tiktok from './assets/tiktok.png'
@@ -14,23 +16,33 @@ function Camada6() {
 
                     <div className="alinhador_bloco">
                         <div className="bloco_redes">
-                            <img src={insta} alt="" />
+                            <Link to='https://www.instagram.com/institutonsfatima/'>
+                                <img src={insta} alt="" />
+                            </Link>
                         </div>
 
                         <div className="bloco_redes">
+                            <Link to={'https://www.facebook.com/institutonsfatima'}>
                             <img src={facebook} alt="" />
+                            </Link>
                         </div>
 
                         <div className="bloco_redes">
+                            <Link to={'https://www.tiktok.com/@institutonsfatima_?is_from_webapp=1&sender_device=pc'}>
                             <img src={tiktok} alt="" />
+                            </Link>
                         </div>
 
                         <div className="bloco_redes">
+                            <Link to={'https://www.linkedin.com/company/institutonsfatima/'}>
                             <img src={linkedin} alt="" />
+                            </Link>
                         </div>
 
                         <div className="bloco_redes">
+                            <Link to={'https://www.youtube.com/@institutosocialnossasenhor3548/videos'}>
                             <img src={youtube} alt="" />
+                            </Link>
                         </div>
                     </div>
 
