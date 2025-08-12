@@ -1,0 +1,45 @@
+.fundo_colorido6 {
+    display: flex;
+    flex-direction: column;
+    background-color: #303261;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+
+    h1 {
+        font-size: 8vh;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        width: 120vh;
+        text-align: center;
+    }
+
+    span {
+        color: #FFAF00;
+    }
+
+    .caixa {
+        display: flex;
+        background-color: #FFAF00;
+        width: 130vh;
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+        padding: 5vh;
+
+        h4 {
+            font-size: 2.7vh;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black;
+            width: 120vh;
+            text-align: center;
+        }
+    }
+    
+}

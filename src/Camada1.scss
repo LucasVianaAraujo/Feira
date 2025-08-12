@@ -46,6 +46,15 @@
             gap: 10vh;
             align-items: center;
 
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: blue;
+            }
+
             h1 {
                 font-size: 4vh;
                 font-family: "Archivo Regular", sans-serif;

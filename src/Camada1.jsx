@@ -1,12 +1,15 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 
+import { Link } from 'react-router';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import frei from './assets/frei.png'
 import instituto from './assets/instituto.webp'
+import Sobre from './Sobre.jsx';
 
 function App() {
 
@@ -24,7 +27,7 @@ function App() {
         </div>
 
         <div className="conexoes">
-          <h1>SOBRE</h1>
+          <Link to={'Sobre'}><h1>SOBRE</h1></Link>
           <h1>CURSOS</h1>
           <button>CONTATO</button>
         </div>
