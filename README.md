@@ -1,1 +1,0 @@
-Protótipo e desenvolvimento: Lucas Viana
