@@ -52,7 +52,7 @@
             }
 
             a:hover {
-                color: #F5B11B;
+                color: rgb(61, 61, 61);
                 transition: all 0.2s;
             }
 
@@ -70,11 +70,16 @@
                 font-style: normal;
                 width: 35vh;
                 background-color: #F5B11B;
+                border: #F5B11B solid 0.7vh;
                 height: 10vh;
                 cursor: pointer;
                 outline: none;
-                border: 0.3vh black solid;
                 border-radius: 10vh;
+            }
+
+            button:hover {
+                background-color: transparent;
+                transition: all 0.5s;
             }
         }
     }
@@ -113,8 +118,8 @@
 
         button {
             background-color: #F5B11B;
+            border: #F5B11B solid 0.3vh;
             outline: none;
-            border: none;
             width: 40vh;
             height: 8vh;
             border-radius: 10vh;
@@ -123,8 +128,9 @@
         }
 
         button:hover {
-            background-color: #eba000;
+            background-color: transparent;
             transition: all 0.5s;
+            color: white;
         }
 
         .bloco {
