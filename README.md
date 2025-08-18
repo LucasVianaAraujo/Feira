@@ -9,15 +9,13 @@ Tecnologias Utilizadas:
 - [Express](https://expressjs.com/)
 - [MySQL](https://www.mysql.com/)
 - [Sass](https://sass-lang.com/)
+- [Axios](https://axios-http.com/ptbr/docs/intro/)
 
 ---
 
 Equipe de Desenvolvimento:
 
-| Lucas Viana | Full Stack Developer | [@seuuser](https://github.com/seuuser) |
-| Lucas Viana | Frontend | [@fulano](https://github.com/fulano) |
-| Lucas Viana | Backend | [@ciclano](https://github.com/ciclano) |
-| Lucas Viana | Designer/UX | [@beltrano](https://github.com/beltrano) |
+| Lucas Viana | Full Stack Developer | Designer/UX | [github: @LucasVianaAraujo](https://www.linkedin.com/in/lucas-viana-developer/) |
 
 ---
 
@@ -31,3 +29,15 @@ Estrutura do Projeto:
 ---
 
 Como executar o projeto:
+
+Executar Backend:
+
+cd Feira/Backend
+
+npm start;
+
+Executar Frontend (abra outro terminal):
+
+cd Feira/Frontend
+
+npm run dev.

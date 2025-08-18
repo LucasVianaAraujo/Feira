@@ -59,7 +59,7 @@ function CadastroUsuario() {
 
             <div className="titulo_cadastro">
                 <h2>CADASTRAR</h2> 
-                <span> NOVO USUÁRIO</span>
+                <span>SUA INSCRIÇÃO</span>
             </div>
 
             <div className="campo_input">
@@ -114,7 +114,7 @@ function CadastroUsuario() {
                     <div>
                         <label>Previsão de Chegada:</label>
                         <input
-                            type="date"
+                            type="time"
                             name="PREVISAO_CHEGADA"
                             value={usuario.PREVISAO_CHEGADA}
                             onChange={handleChange}
