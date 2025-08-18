@@ -44,13 +44,19 @@
     button {
         background-color: #23458B;
         outline: none;
-        border: none;
+        border: #23458B solid 0.5vh;
         width: 40vh;
         height: 8vh;
         border-radius: 10vh;
         font-size: 3vh;
         cursor: pointer;
         color: white;
+        transition: all 0.5s;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: black;
     }
 
     span {

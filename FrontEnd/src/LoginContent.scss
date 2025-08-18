@@ -1,19 +1,107 @@
 .fundo_colorido9 {
     display: flex;
     flex-direction: column;
-    height: 85vh;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    height: 135vh;
+    width: 100%;
+    background-color: #23458B;
+    gap: 2vh;
 
-    label {
-        font-size: 3.5vh;
+    .titulo_cadastro {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            color: white;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-size: 7vh;
+        }
+
+        span {
+            text-align: left;
+            color: #F5B11B;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-size: 7vh;
+        }
     }
 
-    input {
-        height: 5vh;
-        width: 30vh;
-        padding: 1vh;
+    .campo_input {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        border: black solid 0.5vh;
+        background-color: #F5BA53;
+        padding: 5vh;
+        height: 103vh;
+        width: 37%;
+
+        label {
+            display: flex;
+            font-size: 3.5vh;
+            flex-direction: column;
+            color: black;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-size: 3vh;
+        }
+
+        input {
+            height: 5vh;
+            width: 100%;
+            padding: 1vh;
+            outline: none;
+            border: none;
+        }
+
+        select {
+            height: 5vh;
+            width: 100%;
+            padding: 1vh;
+            outline: none;
+            border: none;
+        }
+
+        button {
+            display: flex;
+            margin-top: 3vh;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 8vh;
+            justify-self: center;
+            background-color: #EA3737;
+            border: black solid 0.5vh;
+            cursor: pointer;
+            transition: all 0.7s;
+            outline: none;
+            border-radius: 10vh;
+            color: white;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-size: 3vh;
+        }
+
+        button:hover {
+            color: black;
+            background-color: transparent;
+        }
     }
+
+    p {
+        color: black;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        margin-top: 1.5vh;
+        font-size: 2vh;
+    }
+
 }

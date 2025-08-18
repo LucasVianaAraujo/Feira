@@ -1,4 +1,5 @@
 import { connection } from "./Connection.js";
+import { validarNovoUsuario } from "../validation/AdicionarUsuarioError.js";
 
 export async function listarUsuarios() {
   const comando = `
@@ -15,6 +16,8 @@ export async function adicionarUsuarios() {
 }
 
 export async function inserirUsuario(novoUsuario) {
+  validarNovoUsuario(novoUsuario);
+
   const comando = `
     INSERT INTO cadastro (NOME, ESCOLARIDADE, INTERESSE_CURSO, PREVISAO_CHEGADA, EMAIL, SABENDO_FEIRA, TELEFONE, ALUNO_FREI, CPF)
                values (?, ?, ? , ? , ? , ? , ? , ?, ?);

@@ -40,12 +40,12 @@
 
         a {
             text-decoration: none;
+            transition: all 0.5s;
             color: black;
         }
 
         a:hover {
             color: rgb(61, 61, 61);
-            transition: all 0.2s;
         }
 
         h1 {
@@ -62,16 +62,16 @@
             font-style: normal;
             width: 35vh;
             background-color: #F5B11B;
-            border: #F5B11B solid 0.7vh;
+            border: #F5B11B solid 0.5vh;
             height: 10vh;
             cursor: pointer;
             outline: none;
             border-radius: 10vh;
+            transition: all 0.5s;
         }
 
         button:hover {
             background-color: transparent;
-            transition: all 0.5s;
         }
     }
 }

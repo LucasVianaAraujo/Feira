@@ -23,31 +23,32 @@ function Camada6() {
 
                         <div className="bloco_redes">
                             <Link to={'https://www.facebook.com/institutonsfatima'}>
-                            <img src={facebook} alt="" />
+                                <img src={facebook} alt="" />
                             </Link>
                         </div>
 
                         <div className="bloco_redes">
                             <Link to={'https://www.tiktok.com/@institutonsfatima_?is_from_webapp=1&sender_device=pc'}>
-                            <img src={tiktok} alt="" />
+                                <img src={tiktok} alt="" />
                             </Link>
                         </div>
 
                         <div className="bloco_redes">
                             <Link to={'https://www.linkedin.com/company/institutonsfatima/'}>
-                            <img src={linkedin} alt="" />
+                                <img src={linkedin} alt="" />
                             </Link>
                         </div>
 
                         <div className="bloco_redes">
                             <Link to={'https://www.youtube.com/@institutosocialnossasenhor3548/videos'}>
-                            <img src={youtube} alt="" />
+                                <img src={youtube} alt="" />
                             </Link>
                         </div>
                     </div>
 
                     <div className="direitos">
                         <h3>© Instituto Social Nossa Senhora de Fátima. Todos os direitos reservados.</h3>
+                        <h3>Desenvolvido por <i>Lucas Viana</i>. Confira mais do meu trabalho <Link to={'https://www.linkedin.com/in/lucas-viana-developer/'}>AQUI</Link>! </h3>
                     </div>
                 </div>
 
