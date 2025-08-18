@@ -63,3 +63,20 @@
         color: #EA3737;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .fundo_colorido4 {
+        display: flex;
+
+        .titulo {
+            display: flex;
+
+            h1 {
+                font-size: 5vh;
+                width: 80%;
+                padding-left: 20vh;
+            }
+        }
+
+    }
+}

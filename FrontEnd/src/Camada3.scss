@@ -76,3 +76,18 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .fundo_colorido2 {
+        height: 150vh;
+    }
+
+    .caixa {
+        display: flex;
+
+        h1 {
+            padding-left: 14vh;
+            font-size: 5vh;
+        }
+    }
+}

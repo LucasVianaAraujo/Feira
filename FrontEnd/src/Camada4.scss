@@ -88,3 +88,42 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .fundo_colorido3 {
+        display: flex;
+        flex-direction: column;
+        height: 220vh;
+        align-items: center;
+        justify-content: center;
+
+        .lado_esquerdo {
+            width: 100%;
+
+            h1 {
+                font-size: 5vh;
+            }
+
+            h3 {
+                font-size: 2vh;
+            }
+        }
+
+        .lado_direito {
+            width: 100%;
+            height: 200vh;
+
+            .fundo_azul {
+                height: 130vh;
+
+                h3 {
+                    font-size: 4vh;
+                }
+
+                h5 {
+                    font-size: 2.5vh;
+                }
+            }
+        }
+    }
+}

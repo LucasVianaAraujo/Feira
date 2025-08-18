@@ -52,3 +52,39 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .fundo_colorido1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        .alinhador {
+            display: flex;
+            flex-direction: column;
+
+            .titulo {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                padding-left: 14vh;
+                
+                h1 {
+                    font-size: 5vh;
+                }
+            }
+
+            .caixa {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 65%;
+                height: 70vh;
+            }
+        }
+        
+    }
+    
+    
+}

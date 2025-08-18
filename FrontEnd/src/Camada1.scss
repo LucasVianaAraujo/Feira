@@ -181,3 +181,71 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .topo {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+
+        .alinhar {
+            display: flex;
+            padding-right: 10vh;
+        }
+
+        .conexoes {
+            display: none !important;
+        }
+
+    }
+
+    .separador {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .lado_esquerdo {
+            display: flex;
+            align-items: center;
+            width: 100% !important;
+            height: 85vh;
+
+            h1 {
+                display: flex;
+                align-items: center;
+                font-size: 5vh;
+                width: 50vh;
+            }
+
+            h3 {
+                display: flex;
+                align-items: center;
+                font-size: 3.5vh;
+                width: 50vh;
+            }
+
+            .bloco {
+                display: flex;
+                align-items: center;
+                margin-right: 30vh;
+            }
+
+            button {
+                display: flex;
+                align-self: center;
+                align-items: center;
+                justify-content: center;
+                justify-self: center;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .lado_direito {
+            display: none;
+            width: 100%;
+        }
+    }
+}
