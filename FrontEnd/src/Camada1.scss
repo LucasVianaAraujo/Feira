@@ -283,61 +283,61 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover; // Cobrir o espaço mantendo a proporção
+            object-fit: cover;
             object-position: center;
         }
     }
 }
 
-    @media screen and (max-width: 767px) {
-        .fundo_colorido {
-            .topo {
-                flex-direction: column;
-                height: auto;
-                padding: 2vh;
+@media screen and (max-width: 767px) {
+    .fundo_colorido {
+        .topo {
+            flex-direction: column;
+            height: auto;
+            padding: 2vh;
 
-                .alinhar {
-                    padding-right: 0;
-                    margin-bottom: 2vh;
+            .alinhar {
+                padding-right: 0;
+                margin-bottom: 2vh;
+            }
+
+            .conexoes {
+                display: none !important;
+            }
+        }
+
+        .separador {
+            flex-direction: column;
+
+            .lado_esquerdo {
+                width: 100% !important;
+                padding: 3vh;
+                text-align: center;
+
+                h1 {
+                    font-size: 4vh !important;
+                    width: 100%;
+                    background-color: #F5B11B;
                 }
 
-                .conexoes {
-                    display: none !important;
+                h3 {
+                    font-size: 2.5vh !important;
+                    width: 100%;
+                }
+
+                button {
+                    width: 30vh;
+                    margin: 0 auto;
+                }
+
+                .bloco {
+                    margin: 0 auto;
                 }
             }
 
-            .separador {
-                flex-direction: column;
-
-                .lado_esquerdo {
-                    width: 100% !important;
-                    padding: 3vh;
-                    text-align: center;
-
-                    h1 {
-                        font-size: 4vh !important;
-                        width: 100%;
-                        background-color: #F5B11B;
-                    }
-
-                    h3 {
-                        font-size: 2.5vh !important;
-                        width: 100%;
-                    }
-
-                    button {
-                        width: 30vh;
-                        margin: 0 auto;
-                    }
-
-                    .bloco {
-                        margin: 0 auto;
-                    }
-                }
-
-                .lado_direito {
-                    display: none;
-                }
+            .lado_direito {
+                display: none;
             }
         }
     }
+}

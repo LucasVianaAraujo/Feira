@@ -27,7 +27,6 @@ function CadastroUsuario() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validação básica de campo vazio
         if (!usuario.NOME) {
             setMensagem('O nome é obrigatório!');
             return;

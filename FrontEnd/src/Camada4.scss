@@ -138,3 +138,279 @@
 
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .fundo_colorido3 {
+        display: flex;
+        background-color: #23458B;
+        flex-direction: column;
+        padding: 10vh;
+        height: 195vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .limitador {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 5vh;
+            background-color: #FD026C;
+            border-radius: 1vh;
+            gap: 2vh;
+
+            .titulo {
+                display: flex;
+                align-self: flex-start;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 6vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+
+                span {
+                    color: #F5B11B;
+                }
+
+                h3 {
+                    font-size: 2.8vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+            }
+
+            .bloco_amarelo_baixo {
+                display: flex;
+                background-color: #F5B11B;
+                width: 50%;
+                height: 2vh;
+                align-self: flex-start;
+            }
+
+            .caixa_conteudo {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                text-align: justify;
+                gap: 3vh;
+                align-self: flex-start;
+
+                img {
+                    width: 40vh;
+                    height: 25vh;
+                    border: #F5B11B solid 0.3vh;
+                    border-radius: 1vh;
+                    transition: all 0.5s;
+                    object-fit: cover;
+                }
+
+                img:hover {
+                    transform: scale(1.01);
+                    filter: brightness(0.8);
+                }
+
+                h1 {
+                    font-size: 3.5vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #F5B11B;
+                }
+
+                h3 {
+                    font-size: 3vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+            }
+
+            .caixa_conteudo1 {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+                text-align: justify;
+                gap: 3vh;
+                align-self: flex-end;
+
+                img {
+                    width: 40vh;
+                    height: 25vh;
+                    border: #F5B11B solid 0.3vh;
+                    border-radius: 1vh;
+                    transition: all 0.5s;
+                    object-fit: cover;
+                }
+
+                img:hover {
+                    transform: scale(1.01);
+                    filter: brightness(0.8);
+                }
+
+                h1 {
+                    font-size: 3.5vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #F5BA53;
+                }
+
+                h3 {
+                    font-size: 3vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fundo_colorido3 {
+        display: flex;
+        background-color: pink;
+        flex-direction: column;
+        padding: 10vh;
+        height: 400vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .limitador {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5vh;
+            background-color: #FD026C;
+            border-radius: 1vh;
+            gap: 2vh;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 5vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                    text-align: left;
+                }
+
+                span {
+                    color: #F5B11B;
+                }
+
+                h3 {
+                    font-size: 2vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                    text-align: left;
+                }
+            }
+
+            .bloco_amarelo_baixo {
+                display: flex;
+                background-color: #F5B11B;
+                width: 50%;
+                height: 2vh;
+            }
+
+            .caixa_conteudo {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: justify;
+                gap: 3vh;
+                align-self: center;
+
+                img {
+                    width: 40vh;
+                    height: 25vh;
+                    border: #F5B11B solid 0.3vh;
+                    border-radius: 1vh;
+                    transition: all 0.5s;
+                    object-fit: cover;
+                }
+
+                img:hover {
+                    transform: scale(1.01);
+                    filter: brightness(0.8);
+                }
+
+                h1 {
+                    font-size: 4vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #F5B11B;
+                }
+
+                h3 {
+                    font-size: 2.5vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+            }
+
+            .caixa_conteudo1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: justify;
+                gap: 3vh;
+                align-self: center;
+
+                img {
+                    width: 40vh;
+                    height: 25vh;
+                    border: #F5B11B solid 0.3vh;
+                    border-radius: 1vh;
+                    transition: all 0.5s;
+                    object-fit: cover;
+                }
+
+                img:hover {
+                    transform: scale(1.01);
+                    filter: brightness(0.8);
+                }
+
+                h1 {
+                    font-size: 4vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #F5BA53;
+                }
+
+                h3 {
+                    font-size: 2.5vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+            }
+
+        }
+    }
+}

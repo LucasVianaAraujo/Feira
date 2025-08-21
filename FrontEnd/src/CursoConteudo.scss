@@ -18,19 +18,19 @@
         width: 20vh;
         height: 2.2vh;
     }
-    
+
     .alinhador {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
+
         .conteudo {
             display: flex;
             gap: 2vh;
             flex-direction: column;
             width: 50%;
             padding: 7vh;
-            
+
             h1 {
                 font-family: "Archivo Black", sans-serif;
                 font-weight: 400;
@@ -39,7 +39,7 @@
                 color: white;
                 width: 120vh;
             }
-            
+
             .descricao {
                 display: flex;
                 background-color: #F5BA53;
@@ -67,6 +67,76 @@
                 height: 85vh;
                 width: 100%;
                 z-index: 1;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .fundo_colorido7 {
+        display: flex;
+        background-color: #303261;
+        height: 85vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .bloco {
+            display: flex;
+            background-color: #F5B11B;
+            width: 20vh;
+            height: 2.2vh;
+        }
+        
+        .alinhador {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            .conteudo {
+                display: flex;
+                gap: 1.5vh;
+                flex-direction: column;
+                width: 50%;
+                padding: 5vh;
+                
+                h1 {
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 4.5vh;
+                    color: white;
+                    width: 60vh;
+                }
+                
+                .descricao {
+                    display: flex;
+                    background-color: #F5BA53;
+                    padding: 3vh;
+                    border-radius: 1vh;
+
+                    h3 {
+                        font-family: "Archivo Black", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 2.5vh;
+                        width: 100%;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            .imagem {
+                display: flex;
+                align-items: center;
+                height: 85vh;
+                width: 50%;
+
+                img {
+                    height: 85vh;
+                    width: 100%;
+                    z-index: 1;
+                }
             }
         }
     }

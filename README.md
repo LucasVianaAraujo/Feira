@@ -15,7 +15,7 @@ Tecnologias Utilizadas:
 
 Equipe de Desenvolvimento:
 
-| Lucas Viana | Full Stack Developer | Designer/UX | [github: @LucasVianaAraujo](https://www.linkedin.com/in/lucas-viana-developer/) |
+| Lucas Viana | Full Stack Developer | Designer/UX | [Meu Linkedin](https://www.linkedin.com/in/lucas-viana-developer/) |
 
 ---
 
