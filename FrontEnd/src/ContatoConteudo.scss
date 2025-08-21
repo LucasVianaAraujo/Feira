@@ -15,6 +15,7 @@
     .caixa_amarela {
         display: flex;
         background-color: #F5BA53;
+        border-radius: 1vh;
         width: 130vh;
         height: 55vh;
         padding: 5vh;
@@ -79,6 +80,10 @@
             display: flex;
             width: 50%;
             height: 30vh;
+
+            iframe {
+                border-radius: 1vh;
+            }
         }
 
     }

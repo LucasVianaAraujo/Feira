@@ -7,125 +7,134 @@
 .fundo_colorido3 {
     display: flex;
     background-color: #23458B;
-    align-items: center;
-    justify-content: flex-start;
-    height: 80vh;
+    flex-direction: column;
+    padding: 10vh;
+    height: 160vh;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 
-    .lado_esquerdo {
-        display: flex;
-        width: 50%;
-        padding: 5vh;
-        align-items: center;
-        justify-content: center;
-
-        .conteudo_lado_esquerdo {
-            display: flex;
-            flex-direction: column;
-        }
-
-        h1 {
-            color: white;
-            font-family: "Archivo Black", sans-serif;
-            font-weight: 400;
-            font-size: 6vh;
-
-            span {
-                color: #F5BA53;
-            }
-        }
-
-        img {
-            max-width: 100%;
-            height: 50vh;
-            border: #F5B11B 1vh solid;
-            margin: 2vh 0;
-        }
-
-        h3 {
-            color: white;
-            font-family: "Archivo Black", sans-serif;
-            font-weight: 400;
-            font-size: 3vh;
-        }
-    }
-
-    .lado_direito {
+    .limitador {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: 100%;
-        background-color: #F5B11B;
+        width: 80%;
         padding: 5vh;
+        background-color: #FD026C;
+        border-radius: 1vh;
+        gap: 2vh;
 
-        .fundo_azul {
-            background-color: #23458B;
+        .titulo {
             display: flex;
-            width: 100%;
-            border: black solid 0.7vh;
-            padding: 2vh;
-            height: 55vh;
+            align-self: flex-start;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: justify;
 
-            h3 {
+            h1 {
+                font-size: 8vh;
                 font-family: "Archivo Black", sans-serif;
                 font-weight: 400;
-                font-size: 2.5vh;
+                font-style: normal;
+                color: white;
+            }
+
+            span {
                 color: #F5B11B;
             }
 
-            h5 {
+            h3 {
+                font-size: 3vh;
                 font-family: "Archivo Black", sans-serif;
                 font-weight: 400;
-                font-size: 1.7vh;
+                font-style: normal;
                 color: white;
             }
         }
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .fundo_colorido3 {
-        display: flex;
-        flex-direction: column;
-        height: 220vh;
-        align-items: center;
-        justify-content: center;
+        .bloco_amarelo_baixo {
+            display: flex;
+            background-color: #F5B11B;
+            width: 50%;
+            height: 2vh;
+            align-self: flex-start;
+        }
 
-        .lado_esquerdo {
+        .caixa_conteudo {
+            display: flex;
+            flex-direction: row;
             width: 100%;
+            text-align: justify;
+            gap: 3vh;
+            align-self: flex-start;
+
+            img {
+                width: 40vh;
+                height: 25vh;
+                border: #F5B11B solid 0.3vh;
+                border-radius: 1vh;
+                transition: all 0.5s;
+                object-fit: cover;
+            }
+
+            img:hover {
+                transform: scale(1.01);
+                filter: brightness(0.8);
+            }
 
             h1 {
-                font-size: 5vh;
+                font-size: 4vh;
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #F5B11B;
             }
 
             h3 {
-                font-size: 2vh;
+                font-size: 2.5vh;
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
             }
         }
 
-        .lado_direito {
+        .caixa_conteudo1 {
+            display: flex;
+            flex-direction: row-reverse;
             width: 100%;
-            height: 200vh;
+            text-align: justify;
+            gap: 3vh;
+            align-self: flex-end;
 
-            .fundo_azul {
-                height: 130vh;
-                width: 100%;
-                border: none !important;
+            img {
+                width: 40vh;
+                height: 25vh;
+                border: #F5B11B solid 0.3vh;
+                border-radius: 1vh;
+                transition: all 0.5s;
+                object-fit: cover;
+            }
 
-                h3 {
-                    font-size: 4vh;
-                }
+            img:hover {
+                transform: scale(1.01);
+                filter: brightness(0.8);
+            }
 
-                h5 {
-                    font-size: 2.5vh;
-                }
+            h1 {
+                font-size: 4vh;
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #F5BA53;
+            }
+
+            h3 {
+                font-size: 2.5vh;
+                font-family: "Archivo Black", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: white;
             }
         }
+
     }
 }

@@ -75,7 +75,7 @@
                 cursor: pointer;
                 transition: all 0.5s;
                 outline: none;
-                border-radius: 10vh;
+                border-radius: 1vh;
             }
 
             button:hover {
@@ -122,7 +122,7 @@
             outline: none;
             width: 40vh;
             height: 8vh;
-            border-radius: 10vh;
+            border-radius: 1vh;
             font-size: 3vh;
             cursor: pointer;
             transition: all 0.5s;
@@ -182,70 +182,162 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .topo {
-        display: flex;
-        align-items: center !important;
-        justify-content: center !important;
-
-        .alinhar {
-            display: flex;
-            padding-right: 10vh;
-        }
-
-        .conexoes {
-            display: none !important;
-        }
-
-    }
-
+@media screen and (min-width: 768px) and (max-width: 1280px) {
     .separador {
         display: flex;
+    }
+
+    .lado_esquerdo {
+        display: flex;
+        padding: 7vh;
         flex-direction: column;
-        width: 100%;
+        background-color: #303261;
+        width: 50%;
+        height: 85vh;
+        gap: 1.5vh;
 
-        .lado_esquerdo {
-            display: flex;
-            align-items: center;
+        h1 {
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 5.3vh !important;
+            color: white;
             width: 100% !important;
-            height: 85vh;
-
-            h1 {
-                display: flex;
-                align-items: center;
-                font-size: 5vh;
-                width: 50vh;
-            }
-
-            h3 {
-                display: flex;
-                align-items: center;
-                font-size: 3.5vh;
-                width: 50vh;
-            }
-
-            .bloco {
-                display: flex;
-                align-items: center;
-                margin-right: 30vh;
-            }
-
-            button {
-                display: flex;
-                align-self: center;
-                align-items: center;
-                justify-content: center;
-                justify-self: center;
-            }
-
-            a {
-                text-decoration: none;
-            }
         }
 
-        .lado_direito {
-            display: none;
+        h3 {
+            font-family: "Archivo Regular", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3vh !important;
+            color: white;
+            width: 100% !important;
+            text-align: justify;
+        }
+
+        button {
+            background-color: #F5B11B;
+            border: #F5B11B solid 0.3vh;
+            outline: none;
+            width: 40vh;
+            height: 8vh;
+            border-radius: 1vh;
+            font-size: 3vh;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: white;
+        }
+
+        .bloco {
+            display: flex;
+            background-color: #F5B11B;
+            width: 20vh;
+            height: 2.2vh;
+        }
+    }
+
+    .lado_direito {
+        display: flex;
+        background-color: white;
+        max-width: 50%;
+        max-height: 85vh !important;
+
+        .swiper {
+            padding-bottom: 8vh;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            min-height: 85vh !important;
+            cursor: grab;
+        }
+
+        .swiper-slide:active {
+            cursor: grabbing;
+        }
+
+        .slide-item {
+            width: 120%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none !important;
+            color: black;
+        }
+
+        .swiper-pagination-bullet {
+            background: #303261;
+        }
+
+        img {
             width: 100%;
+            height: 100%;
+            object-fit: cover; // Cobrir o espaço mantendo a proporção
+            object-position: center;
         }
     }
 }
+
+    @media screen and (max-width: 767px) {
+        .fundo_colorido {
+            .topo {
+                flex-direction: column;
+                height: auto;
+                padding: 2vh;
+
+                .alinhar {
+                    padding-right: 0;
+                    margin-bottom: 2vh;
+                }
+
+                .conexoes {
+                    display: none !important;
+                }
+            }
+
+            .separador {
+                flex-direction: column;
+
+                .lado_esquerdo {
+                    width: 100% !important;
+                    padding: 3vh;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 4vh !important;
+                        width: 100%;
+                        background-color: #F5B11B;
+                    }
+
+                    h3 {
+                        font-size: 2.5vh !important;
+                        width: 100%;
+                    }
+
+                    button {
+                        width: 30vh;
+                        margin: 0 auto;
+                    }
+
+                    .bloco {
+                        margin: 0 auto;
+                    }
+                }
+
+                .lado_direito {
+                    display: none;
+                }
+            }
+        }
+    }

@@ -40,6 +40,7 @@
             height: 30vh;
             font-size: 3.2vh;
             padding: 5vh;
+            border-radius: 1vh;
 
             h3 {
                 text-align: justify;
@@ -53,38 +54,104 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
     .fundo_colorido1 {
         display: flex;
+        background-color: #F5BA53;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-
+        justify-content: space-around;
+        height: 60vh;
+        padding: 5vh;
+    
         .alinhador {
             display: flex;
-            flex-direction: column;
-
+            gap: 2vh;
+    
             .titulo {
                 display: flex;
+                width: 80vh;
                 align-items: center;
-                text-align: left;
-                padding-left: 14vh;
-                
+                padding-left: 4vh;
+    
                 h1 {
-                    font-size: 5vh;
+                    font-size: 7vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #23458B;
                 }
             }
-
+    
             .caixa {
                 display: flex;
-                align-self: center;
-                justify-self: center;
-                width: 65%;
-                height: 70vh;
+                align-items: center;
+                background-color: white;
+                max-width: 110vh;
+                height: 50%;
+                font-size: 3.2vh;
+                padding: 5vh;
+    
+                h3 {
+                    text-align: justify;
+                    font-size: 2.6vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #23458B;
+                }
             }
         }
-        
     }
+}
+
+@media screen and (max-width: 767px) {
+    .fundo_colorido1 {
+        display: flex;
+        background-color: #F5BA53;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        height: 50vh;
+        padding: 5vh;
     
+        .alinhador {
+            display: flex;
+            gap: 2vh;
     
+            .titulo {
+                display: flex;
+                width: 80vh;
+                align-items: center;
+                padding-left: 4vh;
+    
+                h1 {
+                    font-size: 8vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #23458B;
+                }
+            }
+    
+            .caixa {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                max-width: 110vh;
+                height: 30vh;
+                font-size: 3.2vh;
+                padding: 5vh;
+    
+                h3 {
+                    text-align: justify;
+                    font-size: 2.6vh;
+                    font-family: "Archivo Black", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: #23458B;
+                }
+            }
+        }
+    }
 }

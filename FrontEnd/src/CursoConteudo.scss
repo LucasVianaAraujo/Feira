@@ -18,19 +18,19 @@
         width: 20vh;
         height: 2.2vh;
     }
-
+    
     .alinhador {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
+        
         .conteudo {
             display: flex;
             gap: 2vh;
             flex-direction: column;
             width: 50%;
             padding: 7vh;
-
+            
             h1 {
                 font-family: "Archivo Black", sans-serif;
                 font-weight: 400;
@@ -39,11 +39,12 @@
                 color: white;
                 width: 120vh;
             }
-
+            
             .descricao {
                 display: flex;
                 background-color: #F5BA53;
                 padding: 3vh;
+                border-radius: 1vh;
 
                 h3 {
                     font-family: "Archivo Black", sans-serif;

@@ -40,6 +40,7 @@
         align-self: center;
         border: black solid 0.5vh;
         background-color: #F5BA53;
+        border-radius: 1vh;
         padding: 5vh;
         height: 103vh;
         width: 37%;
@@ -80,10 +81,10 @@
             justify-self: center;
             background-color: #EA3737;
             border: black solid 0.5vh;
+            border-radius: 1vh;
             cursor: pointer;
             transition: all 0.7s;
             outline: none;
-            border-radius: 10vh;
             color: white;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
