@@ -1,416 +1,173 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 .fundo_colorido3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8vh 5%;
+  background: linear-gradient(180deg, #00A1D8 50%, rgba(11, 35, 143, 1) 100%);
+
+  .limitador {
     display: flex;
-    background-color: #23458B;
     flex-direction: column;
-    padding: 10vh;
-    height: 160vh;
-    width: 100%;
-    justify-content: center;
     align-items: center;
+    width: 70%;
+    padding: 5vh;
+    border-radius: 1vh;
+    gap: 8vh;
 
-    .limitador {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        padding: 5vh;
-        background-color: #FD026C;
-        border-radius: 1vh;
-        gap: 2vh;
+    .titulo {
+      align-self: flex-start;
 
-        .titulo {
-            display: flex;
-            align-self: flex-start;
-            flex-direction: column;
+      h1 {
+        font-size: 7vh;
+        font-family: "Archivo Black", sans-serif;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+      }
 
-            h1 {
-                font-size: 8vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: white;
-            }
+      span {
+        color: #F5B11B;
+      }
 
-            span {
-                color: #F5B11B;
-            }
-
-            h3 {
-                font-size: 3vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: white;
-            }
-        }
-
-        .bloco_amarelo_baixo {
-            display: flex;
-            background-color: #F5B11B;
-            width: 50%;
-            height: 2vh;
-            align-self: flex-start;
-        }
-
-        .caixa_conteudo {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            text-align: justify;
-            gap: 3vh;
-            align-self: flex-start;
-
-            img {
-                width: 40vh;
-                height: 25vh;
-                border: #F5B11B solid 0.3vh;
-                border-radius: 1vh;
-                transition: all 0.5s;
-                object-fit: cover;
-            }
-
-            img:hover {
-                transform: scale(1.01);
-                filter: brightness(0.8);
-            }
-
-            h1 {
-                font-size: 4vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: #F5B11B;
-            }
-
-            h3 {
-                font-size: 2.5vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: white;
-            }
-        }
-
-        .caixa_conteudo1 {
-            display: flex;
-            flex-direction: row-reverse;
-            width: 100%;
-            text-align: justify;
-            gap: 3vh;
-            align-self: flex-end;
-
-            img {
-                width: 40vh;
-                height: 25vh;
-                border: #F5B11B solid 0.3vh;
-                border-radius: 1vh;
-                transition: all 0.5s;
-                object-fit: cover;
-            }
-
-            img:hover {
-                transform: scale(1.01);
-                filter: brightness(0.8);
-            }
-
-            h1 {
-                font-size: 4vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: #F5BA53;
-            }
-
-            h3 {
-                font-size: 2.5vh;
-                font-family: "Archivo Black", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color: white;
-            }
-        }
-
+      h3 {
+        font-size: 2.8vh;
+        font-family: "Archivo Regular", sans-serif;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+      }
     }
+
+    .bloco_amarelo_baixo {
+      margin-top: 3vh;
+      background-color: #F5B11B;
+      width: 50%;
+      height: 2vh;
+      align-self: flex-start;
+    }
+
+    .caixa_conteudo,
+    .caixa_conteudo1 {
+      display: flex;
+      gap: 3vh;
+      width: 100%;
+      text-align: justify;
+      align-items: center;
+
+      img {
+        width: 40vh;
+        height: 25vh;
+        border: #F5B11B solid 0.3vh;
+        border-radius: 1vh;
+        object-fit: cover;
+        transition: all 0.4s;
+
+        &:hover {
+          transform: scale(1.02);
+          filter: brightness(0.85);
+          cursor: grab;
+        }
+      }
+
+      h1 {
+        font-size: 4.5vh;
+        font-family: "Archivo Black", sans-serif;
+        color: #F5BA53;
+        text-shadow: 1px 1px 2px black;
+      }
+
+      h3 {
+        font-size: 2.6vh;
+        font-family: "Archivo Regular", sans-serif;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        text-align: justify !important;
+      }
+    }
+
+    .caixa_conteudo1 {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-    .fundo_colorido3 {
-        display: flex;
-        background-color: #23458B;
-        flex-direction: column;
-        padding: 10vh;
-        height: 195vh;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+  .fundo_colorido3 {
+    padding: 6vh 4%;
 
-        .limitador {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            padding: 5vh;
-            background-color: #FD026C;
-            border-radius: 1vh;
-            gap: 2vh;
-
-            .titulo {
-                display: flex;
-                align-self: flex-start;
-                flex-direction: column;
-
-                h1 {
-                    font-size: 6vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                }
-
-                span {
-                    color: #F5B11B;
-                }
-
-                h3 {
-                    font-size: 2.8vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                }
-            }
-
-            .bloco_amarelo_baixo {
-                display: flex;
-                background-color: #F5B11B;
-                width: 50%;
-                height: 2vh;
-                align-self: flex-start;
-            }
-
-            .caixa_conteudo {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                text-align: justify;
-                gap: 3vh;
-                align-self: flex-start;
-
-                img {
-                    width: 40vh;
-                    height: 25vh;
-                    border: #F5B11B solid 0.3vh;
-                    border-radius: 1vh;
-                    transition: all 0.5s;
-                    object-fit: cover;
-                }
-
-                img:hover {
-                    transform: scale(1.01);
-                    filter: brightness(0.8);
-                }
-
-                h1 {
-                    font-size: 3.5vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #F5B11B;
-                }
-
-                h3 {
-                    font-size: 3vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                }
-            }
-
-            .caixa_conteudo1 {
-                display: flex;
-                flex-direction: row-reverse;
-                width: 100%;
-                text-align: justify;
-                gap: 3vh;
-                align-self: flex-end;
-
-                img {
-                    width: 40vh;
-                    height: 25vh;
-                    border: #F5B11B solid 0.3vh;
-                    border-radius: 1vh;
-                    transition: all 0.5s;
-                    object-fit: cover;
-                }
-
-                img:hover {
-                    transform: scale(1.01);
-                    filter: brightness(0.8);
-                }
-
-                h1 {
-                    font-size: 3.5vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #F5BA53;
-                }
-
-                h3 {
-                    font-size: 3vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                }
-            }
-
+    .limitador {
+      .titulo {
+        h1 {
+          font-size: 5.5vh;
         }
+        h3 {
+          font-size: 2.4vh;
+        }
+      }
+
+      .caixa_conteudo,
+      .caixa_conteudo1 {
+        img {
+          width: 35vh;
+          height: 22vh;
+        }
+        h1 {
+          font-size: 3.8vh;
+        }
+        h3 {
+          font-size: 2.4vh;
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .fundo_colorido3 {
-        display: flex;
-        background-color: pink;
-        flex-direction: column;
-        padding: 10vh;
-        height: 400vh;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+  .fundo_colorido3 {
+    padding: 4vh 3%;
 
-        .limitador {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding: 5vh;
-            background-color: #FD026C;
-            border-radius: 1vh;
-            gap: 2vh;
+    .limitador {
+      gap: 5vh;
+      width: 100%;
 
-            .titulo {
-                display: flex;
-                flex-direction: column;
+      .titulo {
+        align-self: left;
+        text-align: left;
 
-                h1 {
-                    font-size: 5vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                    text-align: left;
-                }
-
-                span {
-                    color: #F5B11B;
-                }
-
-                h3 {
-                    font-size: 2vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                    text-align: left;
-                }
-            }
-
-            .bloco_amarelo_baixo {
-                display: flex;
-                background-color: #F5B11B;
-                width: 50%;
-                height: 2vh;
-            }
-
-            .caixa_conteudo {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                text-align: justify;
-                gap: 3vh;
-                align-self: center;
-
-                img {
-                    width: 40vh;
-                    height: 25vh;
-                    border: #F5B11B solid 0.3vh;
-                    border-radius: 1vh;
-                    transition: all 0.5s;
-                    object-fit: cover;
-                }
-
-                img:hover {
-                    transform: scale(1.01);
-                    filter: brightness(0.8);
-                }
-
-                h1 {
-                    font-size: 4vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #F5B11B;
-                }
-
-                h3 {
-                    font-size: 2.5vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                }
-            }
-
-            .caixa_conteudo1 {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                text-align: justify;
-                gap: 3vh;
-                align-self: center;
-
-                img {
-                    width: 40vh;
-                    height: 25vh;
-                    border: #F5B11B solid 0.3vh;
-                    border-radius: 1vh;
-                    transition: all 0.5s;
-                    object-fit: cover;
-                }
-
-                img:hover {
-                    transform: scale(1.01);
-                    filter: brightness(0.8);
-                }
-
-                h1 {
-                    font-size: 4vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #F5BA53;
-                }
-
-                h3 {
-                    font-size: 2.5vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: white;
-                }
-            }
-
+        h1 {
+          font-size: 4.5vh;
         }
+        h3 {
+          display: none !important;
+          font-size: 2.5vh;
+        }
+      }
+
+      .bloco_amarelo_baixo {
+        margin-top: 2vh;
+        align-self: center;
+        width: 50%;
+      }
+
+      .caixa_conteudo,
+      .caixa_conteudo1 {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+          width: 100%;
+          aspect-ratio: 16/9;
+          height: auto;
+        }
+
+        h1 {
+          font-size: 3.2vh;
+          text-align: left;
+        }
+        h3 {
+          font-size: 2vh;
+        }
+      }
     }
+  }
 }

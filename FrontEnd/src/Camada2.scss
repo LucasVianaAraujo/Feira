@@ -54,105 +54,72 @@
     }
 }
 
+/* Tablet (768px até 1280px) */
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     .fundo_colorido1 {
-        display: flex;
-        background-color: #F5BA53;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-around;
-        height: 60vh;
-        padding: 5vh;
+        height: auto; /* evita corte */
+        flex-direction: column; /* facilita centralizar */
+        padding: 4vh;
 
         .alinhador {
-            display: flex;
-            gap: 2vh;
+            flex-direction: column;
+            align-items: center;
+            gap: 3vh;
 
             .titulo {
-                display: flex;
-                width: 80vh;
-                align-items: center;
-                padding-left: 4vh;
+                width: 100%;
+                text-align: center;
+                padding: 0;
 
                 h1 {
-                    font-size: 7vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #23458B;
+                    font-size: 5.5vh;
                 }
             }
 
             .caixa {
-                display: flex;
-                align-items: center;
-                background-color: white;
-                max-width: 110vh;
-                height: 50%;
-                font-size: 3.2vh;
-                padding: 5vh;
+                max-width: 90%;
+                height: auto; /* se adapta ao conteúdo */
+                padding: 4vh;
 
                 h3 {
-                    text-align: justify;
-                    font-size: 2.6vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #23458B;
+                    font-size: 2.2vh;
                 }
             }
         }
     }
 }
 
+/* Mobile (até 767px) */
 @media screen and (max-width: 767px) {
     .fundo_colorido1 {
-        display: flex;
-        background-color: #F5BA53;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-around;
+        flex-direction: column;
         width: 100%;
-        height: 80vh;
-        padding: 5vh;
+        height: auto; /* evita altura fixa que pode estourar em celular */
+        padding: 4vh;
 
         .alinhador {
-            display: flex;
-            gap: 2vh;
             flex-direction: column;
+            gap: 2vh;
+            align-items: center;
 
             .titulo {
-                display: flex;
-                width: 80vh;
-                align-items: center;
-                padding-left: 4vh;
+                width: 100%;
+                text-align: center;
+                padding: 0;
 
                 h1 {
-                    font-size: 5vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #23458B;
+                    font-size: 4vh;
                 }
             }
 
             .caixa {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: white;
-                max-width: 80%;
-                height: 30vh;
-                font-size: 3.2vh;
-                padding: 5vh;
+                max-width: 90%;
+                height: auto;
+                padding: 3vh;
+                text-align: center;
 
                 h3 {
-                    text-align: justify;
-                    font-size: 2vh;
-                    font-family: "Archivo Black", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    color: #23458B;
+                    font-size: 1.8vh;
                 }
             }
         }

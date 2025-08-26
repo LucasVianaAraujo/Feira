@@ -9,9 +9,9 @@ function Camada4() {
                 <div className="titulo">
                     <h1>PRINCIPAIS <span>ATRAÇÕES</span></h1>
                     <h3>CONFIRA O QUE ENCONTRAR EM CADA ANDAR!</h3>
+                    <div className="bloco_amarelo_baixo" />
                 </div>
 
-                <div className="bloco_amarelo_baixo" />
 
                 <div className="caixa_conteudo">
                     <img src={apresentando} alt="" />
