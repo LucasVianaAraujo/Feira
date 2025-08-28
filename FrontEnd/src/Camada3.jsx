@@ -28,11 +28,11 @@ function Camada3() {
     }, []);
 
     const data = [
-        { id: '1', image: informatica, text: <div><h1>DESENVOLVEDORES</h1><h3>Descrição detalhada</h3></div> },
-        { id: '2', image: meninas_adm, text: <div><h1>ADMINISTRADORES</h1><h3>Descrição detalhada</h3></div> },
-        { id: '3', image: cv, text: <div><h1>DESIGNERS</h1><h3>Descrição detalhada</h3></div> },
-        { id: '4', image: eletro, text: <div><h1>ELETROTÉCNICOS</h1><h3>Descrição detalhada</h3></div> },
-        { id: '5', image: robo, text: <div><h1>ROBÓTICA</h1><h3>Descrição detalhada</h3></div> }
+        { id: '1', image: informatica, text: <div><h1>DESENVOLVEDORES</h1><h3>“Transformam ideias em código e tecnologia em soluções.”</h3></div> },
+        { id: '2', image: meninas_adm, text: <div><h1>ADMINISTRADORES</h1><h3>“Organizam recursos e pessoas para alcançar resultados.”</h3></div> },
+        { id: '3', image: cv, text: <div><h1>DESIGNERS</h1><h3>“Criam experiências visuais que encantam e comunicam.”</h3></div> },
+        { id: '4', image: eletro, text: <div><h1>ELETROTÉCNICOS</h1><h3>“Conectam energia com segurança e eficiência.”</h3></div> },
+        { id: '5', image: robo, text: <div><h1>ROBÓTICA</h1><h3>"Integram mecânica e inteligência para automação."</h3></div> }
     ];
 
     return (

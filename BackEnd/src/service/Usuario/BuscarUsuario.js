@@ -1,4 +1,4 @@
-import { BuscarUsuario } from "../../repository/UsuarioRep/BuscarUsuario.js";
+import { BuscarUsuario } from "../../repository/Usuario/BuscarUsuario.js";
 
 export default async function consultarUsuario(nome) {
     // lógica de negócio
