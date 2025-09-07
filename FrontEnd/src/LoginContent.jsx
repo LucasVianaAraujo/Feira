@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+import { Link } from 'react-router';
+
 function CadastroUsuario() {
     const [usuario, setUsuario] = useState({
         NOME: '',
@@ -150,15 +152,14 @@ function CadastroUsuario() {
 
                 {mensagem && <p>{mensagem}</p>}
 
-                <label>BUSCAR VISITANTE:</label>
-                <input
-                    type="text"
-                    placeholder="Leandro Silva..."
-                    value={nomeBusca}
-                    onChange={e => setNomeBusca(e.target.value)}
-                />
-                <button type="button" onClick={BuscarVisitante}>Buscar</button>
-                <p>{resultadoBusca}</p>
+                    <Link to={'/buscarvisitante'}>
+                        <button id='botao1'>DESCOBRIR VISITANTES</button>
+                    </Link>
+
+                    <Link to={'/loginuser'}>
+                        <button id='botao2'>LOGIN</button>
+                    </Link>
+
             </div>
         </div>
     );

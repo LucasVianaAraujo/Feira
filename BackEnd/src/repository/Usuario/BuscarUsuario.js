@@ -16,3 +16,25 @@ export async function BuscarUsuario(nome) {
 
     return registros;
 }
+
+export async function BuscarVisitanteFeiraFiltro(nome) {
+    const comando = `
+    SELECT * FROM CADASTRO
+    WHERE nome
+    LIKE ?
+    `
+
+    const [info] = await connection.query(comando, [`%${nome}%`])
+    return info;
+}
+
+export async function BuscarVisitanteFeira(nome) {
+    const comando = `
+    SELECT * FROM CADASTRO
+    WHERE nome
+    LIKE ?
+    `
+
+    const [info] = await connection.query(comando, [`%${nome}%`])
+    return info;
+}

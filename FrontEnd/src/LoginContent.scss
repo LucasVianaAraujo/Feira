@@ -42,7 +42,7 @@
         background-color: #F5BA53;
         border-radius: 1vh;
         padding: 5vh;
-        height: 130vh; // VOLTAR
+        height: 123vh; // VOLTAR
         width: 37%;
 
         label {
@@ -79,7 +79,7 @@
             width: 70%;
             height: 8vh;
             justify-self: center;
-            background-color: #EA3737;
+            background-color: #28a745;
             border: black solid 0.5vh;
             border-radius: 1vh;
             cursor: pointer;
@@ -95,6 +95,26 @@
             color: black;
             background-color: transparent;
         }
+
+        #botao1 {
+            min-width: 107%;
+            background-color: #007bff;
+        }
+
+        #botao1:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        #botao2 {
+            background-color: #fd7e14;
+            min-width: 385%;
+        }
+
+        #botao2:hover {
+            background-color: transparent;
+            color: black;
+        }
     }
 
     p {
@@ -105,4 +125,7 @@
         font-size: 2vh;
     }
 
+    a {
+        text-decoration: none;
+    }
 }

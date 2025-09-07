@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.fundocolorido11 {
+    display: flex;
+    background-color: #23458B;
+    width: 100%;
+    min-height: 85vh;
+    max-height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+
+    .titulo {
+        display: flex;
+        text-align: center;
+        color: white;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 3vh;
+
+        span {
+            color: #F5BA53;
+        }
+    }
+
+    .bloco_busca_visitante {
+        display: flex;
+        width: 60vh;
+        height: 20vh;
+        background-color: #F5BA53;
+        border-radius: 1vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5vh;
+
+        input {
+            height: 7vh;
+            width: 100%;
+            padding: 1vh;
+            outline: none;
+            border: none;
+        }
+
+        label {
+            display: flex;
+            font-size: 3.5vh;
+            flex-direction: column;
+            color: black;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-size: 3vh;
+        }
+
+    }
+
+    button {
+        display: flex;
+        margin-top: 3vh;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 8vh;
+        justify-self: center;
+        background-color: #EA3737;
+        border: black solid 0.5vh;
+        border-radius: 1vh;
+        cursor: pointer;
+        transition: all 0.7s;
+        outline: none;
+        color: white;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-size: 3vh;
+    }
+
+    button:hover {
+        background-color: transparent;
+    }
+
+    .campo_resultados {
+        display: flex;
+        width: 50%;
+        height: auto;
+        padding: 3vh;
+        flex-direction: column;
+        gap: 2vh;
+
+        .dupla_resultado {
+            display: flex;
+            flex-direction: row;
+            gap: 2vh;
+        }
+
+        .resultado {
+            display: flex;
+            border-radius: 1vh;
+            padding: 1vh;
+            width: 50%;
+            height: 20vh;
+            background-color: #D9D9D9;
+            color: black;
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-size: 1vh;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            align-items: center;
+        }
+    }
+}
