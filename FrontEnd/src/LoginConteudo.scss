@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#botao-administrador {
+    display: flex;
+    background-color: green;
+    width: auto;
+    padding: 1vh;
+}
+
+#botao-administrador:hover {
+    background-color: rgb(16, 107, 16);
+}
+
+#botao-acessar:hover {
+    background-color: #ac2f2f;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    .fundo_colorido10 {
+        padding: 3vh;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        font-size: 4vh;
+    }
+
+    .bloco_login {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .bloco_login label {
+        font-size: 2.5vh;
+    }
+
+    .bloco_login input {
+        height: 6vh;
+        font-size: 2vh;
+    }
+
+    button {
+        width: 40%;
+        height: 7vh;
+        font-size: 2.5vh;
+    }
+
+    #botao-administrador {
+        width: 50%;
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fundo_colorido10 {
+        padding: 2vh;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        font-size: 3vh;
+    }
+
+    .bloco_login {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .bloco_login label {
+        font-size: 2vh;
+    }
+
+    .bloco_login input {
+        height: 5vh;
+        font-size: 1.8vh;
+    }
+
+    button {
+        width: 80%;
+        height: 6vh;
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+
+    #botao-administrador {
+        width: 80%;
+        font-size: 2vh;
+        margin-top: 1vh;
+    }
+}

@@ -54,11 +54,10 @@
     }
 }
 
-/* Tablet (768px até 1280px) */
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     .fundo_colorido1 {
-        height: auto; /* evita corte */
-        flex-direction: column; /* facilita centralizar */
+        height: auto;
+        flex-direction: column;
         padding: 4vh;
 
         .alinhador {
@@ -78,7 +77,7 @@
 
             .caixa {
                 max-width: 90%;
-                height: auto; /* se adapta ao conteúdo */
+                height: auto;
                 padding: 4vh;
 
                 h3 {
@@ -89,12 +88,11 @@
     }
 }
 
-/* Mobile (até 767px) */
 @media screen and (max-width: 767px) {
     .fundo_colorido1 {
         flex-direction: column;
         width: 100%;
-        height: auto; /* evita altura fixa que pode estourar em celular */
+        height: auto;
         padding: 4vh;
 
         .alinhador {

@@ -31,7 +31,7 @@
     .bloco_login {
         display: flex;
         width: 60vh;
-        height: 30vh;
+        height: 45vh;
         background-color: #F5BA53;
         border-radius: 1vh;
         flex-direction: column;
@@ -45,6 +45,7 @@
             padding: 1vh;
             outline: none;
             border: none;
+            border-radius: 1vh;
         }
 
         label {
@@ -63,11 +64,11 @@
         margin-top: 3vh;
         align-items: center;
         justify-content: center;
-        width: 20%;
-        height: 8vh;
+        width: 100%;
+        height: 7vh;
         justify-self: center;
         background-color: #EA3737;
-        border: black solid 0.5vh;
+        border: none;
         border-radius: 1vh;
         cursor: pointer;
         transition: all 0.7s;
@@ -78,7 +79,7 @@
         font-size: 3vh;
     }
 
-    button:hover {
-        background-color: transparent;
+    #botao-admin:hover {
+        background-color: #aa3434;
     }
 }

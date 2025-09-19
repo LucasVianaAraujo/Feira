@@ -9,11 +9,11 @@
     background-color: #23458B;
     width: 100%;
     min-height: 85vh;
-    max-height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 3vh;
+    padding: 5vh;
 
     .titulo {
         display: flex;
@@ -45,18 +45,17 @@
             padding: 1vh;
             outline: none;
             border: none;
+            border-radius: 1vh;
         }
 
         label {
             display: flex;
-            font-size: 3.5vh;
             flex-direction: column;
             color: black;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
             font-size: 3vh;
         }
-
     }
 
     button {
@@ -68,7 +67,7 @@
         height: 8vh;
         justify-self: center;
         background-color: #EA3737;
-        border: black solid 0.5vh;
+        border: none;
         border-radius: 1vh;
         cursor: pointer;
         transition: all 0.7s;
@@ -77,21 +76,23 @@
         font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-size: 3vh;
-    }
 
-    button:hover {
-        background-color: transparent;
+        &:hover {
+            background-color: #b83030;
+        }
     }
 
     .campo_resultados {
-        display: flex;
-        width: 50%;
-        height: auto;
-        padding: 3vh;
-        flex-direction: column;
-        gap: 2vh;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
 
         .dupla_resultado {
+            align-items: center;
+            justify-content: center;
             display: flex;
             flex-direction: row;
             justify-self: center;
@@ -100,20 +101,101 @@
         }
 
         .resultado {
-            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            align-items: center;
+            width: 25%;
+            margin: 1%;
+            height: 20vh;
             border-radius: 1vh;
             padding: 1vh;
-            width: 50%;
-            height: 20vh;
             background-color: #D9D9D9;
             color: black;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
-            font-size: 1vh;
-            flex-direction: column;
-            justify-content: center;
-            text-align: justify;
+            font-size: 1.3vh;
+            text-align: center;
             align-items: center;
+            padding-top: 4vh;
         }
     }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+  .fundocolorido11 {
+    padding: 3vh;
+    min-height: auto;
+
+    .titulo {
+      font-size: 2.5vh;
+    }
+
+    .bloco_busca_visitante {
+      width: 80%;
+      height: auto;
+      padding: 3vh;
+
+      label {
+        font-size: 2.5vh;
+      }
+
+      input {
+        height: 6vh;
+        font-size: 2vh;
+      }
+    }
+
+    button {
+      width: 30%;
+      height: 7vh;
+      font-size: 2.5vh;
+    }
+
+    .campo_resultados .resultado {
+      width: 40%;
+      height: auto;
+      font-size: 1.2vh;
+      padding-top: 2vh;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fundocolorido11 {
+    padding: 2vh;
+
+    .titulo {
+      font-size: 2vh;
+    }
+
+    .bloco_busca_visitante {
+      width: 95%;
+      height: auto;
+      padding: 2vh;
+
+      label {
+        font-size: 1.8vh;
+      }
+
+      input {
+        height: 5vh;
+        font-size: 1.6vh;
+      }
+    }
+
+    button {
+      width: 80%;
+      height: 6vh;
+      font-size: 2vh;
+    }
+
+    .campo_resultados .resultado {
+      width: 90%;
+      height: auto;
+      font-size: 1.5vh;
+      padding-top: 1.5vh;
+      margin: 1vh auto;
+    }
+  }
 }

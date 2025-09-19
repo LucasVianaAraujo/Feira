@@ -5,6 +5,8 @@ import AdicionarVisitante from '../src/controller/Usuario/login.js'
 import Buscar from './controller/Usuario/buscarvisitante.js'
 import Deletar from './controller/Usuario/ExcluirVisitante.js'
 import Verificar from './controller/Usuario/VerificarAdm.js'
+import ReceberQrCode from './controller/Usuario/ReceberQrCode.js'
+import VeficiarUsuario from './controller/Usuario/VeficiarUsuario.js'
 
 export default function adicionarRotas(api) {
     api.use(AdicionarUsuario);
@@ -14,4 +16,6 @@ export default function adicionarRotas(api) {
     api.use(Buscar);
     api.use(Deletar);
     api.use(Verificar);
+    api.use(ReceberQrCode);
+    api.use(VeficiarUsuario);
 }

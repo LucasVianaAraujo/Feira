@@ -2,21 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 160vh; // VOLTAR
+    justify-content: flex-start;
+    min-height: 170vh;
     width: 100%;
     background-color: #23458B;
     gap: 2vh;
+    padding-top: 2vh;
 
     .titulo_cadastro {
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
         align-items: center;
 
         h2 {
-            display: flex;
             color: white;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
@@ -24,7 +23,6 @@
         }
 
         span {
-            display: flex;
             color: #F5B11B;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
@@ -34,98 +32,205 @@
 
     .campo_input {
         display: flex;
-        justify-self: center;
-        align-items: center;
         flex-direction: column;
-        justify-content: center;
-        align-self: center;
+        align-items: center;
         background-color: #F5BA53;
         border-radius: 1vh;
         padding: 5vh;
-        height: 123vh; // VOLTAR
         width: 37%;
+        min-width: 300px;
+        gap: 2vh;
 
         label {
-            display: flex;
-            font-size: 3.5vh;
-            flex-direction: column;
-            color: black;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
             font-size: 3vh;
-        }
-
-        input {
-            height: 5vh;
+            color: black;
             width: 100%;
-            padding: 1vh;
-            outline: none;
-            border: none;
         }
 
+        input,
         select {
             height: 5vh;
             width: 100%;
             padding: 1vh;
             outline: none;
             border: none;
+            border-radius: 0.5vh;
+            margin-bottom: 2vh;
         }
 
         button {
             display: flex;
-            margin-top: 3vh;
             align-items: center;
             justify-content: center;
-            width: 70%;
+            width: 100%;
             height: 8vh;
-            justify-self: center;
+            margin-top: 1.5vh;
             background-color: #28a745;
-            border: black solid 0.5vh;
+            border: none;
             border-radius: 1vh;
             cursor: pointer;
-            transition: all 0.7s;
+            transition: all 0.5s;
             outline: none;
             color: white;
             font-family: "Archivo Black", sans-serif;
+            border: none;
             font-weight: 400;
             font-size: 3vh;
         }
 
-        button:hover {
-            color: black;
-            background-color: transparent;
+        #botao:hover {
+            background-color: #2e8843;
         }
 
         #botao1 {
-            min-width: 107%;
+            width: 100%;
             background-color: #007bff;
+            margin-top: 1.5vh;
         }
 
         #botao1:hover {
-            background-color: transparent;
-            color: black;
+            background-color: #1466bd;
         }
 
         #botao2 {
+            width: 100%;
             background-color: #fd7e14;
-            min-width: 385%;
+            margin-top: 1.5vh;
         }
 
         #botao2:hover {
-            background-color: transparent;
-            color: black;
+            background-color: #c76e25;
         }
     }
+}
 
-    p {
-        color: black;
-        font-family: "Archivo Black", sans-serif;
-        font-weight: 400;
-        margin-top: 1.5vh;
+@media screen and (max-width: 1280px) {
+    .fundo_colorido9 .campo_input {
+        width: 70%;
+        padding: 3vh;
+    }
+
+    .titulo_cadastro h2,
+    .titulo_cadastro span {
+        font-size: 5vh;
+    }
+
+    .campo_input label {
+        font-size: 2.5vh;
+    }
+
+    .campo_input input,
+    .campo_input select {
+        height: 4.5vh;
         font-size: 2vh;
     }
 
-    a {
-        text-decoration: none;
+    .campo_input button {
+        height: 7vh;
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fundo_colorido9 .campo_input {
+        width: 90%;
+        padding: 2vh;
+    }
+
+    .titulo_cadastro h2,
+    .titulo_cadastro span {
+        font-size: 4vh;
+    }
+
+    .campo_input label {
+        font-size: 2vh;
+    }
+
+    .campo_input input,
+    .campo_input select {
+        height: 4vh;
+        font-size: 1.8vh;
+    }
+
+    .campo_input button {
+        height: 6vh;
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    .fundo_colorido9 {
+        height: auto;
+    }
+
+    .campo_input {
+        width: 60%;
+        padding: 4vh;
+        height: auto;
+    }
+
+    .titulo_cadastro h2,
+    .titulo_cadastro span {
+        font-size: 5vh;
+    }
+
+    .campo_input label {
+        font-size: 2.5vh;
+    }
+
+    .campo_input input,
+    .campo_input select {
+        height: 4.5vh;
+        font-size: 2vh;
+    }
+
+    .campo_input button {
+        height: 7vh;
+        font-size: 2.5vh;
+    }
+
+    #botao1,
+    #botao2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fundo_colorido9 {
+        height: auto;
+        padding: 2vh 0;
+    }
+
+    .campo_input {
+        width: 90%;
+        padding: 3vh;
+        height: auto;
+    }
+
+    .titulo_cadastro h2,
+    .titulo_cadastro span {
+        font-size: 4vh;
+    }
+
+    .campo_input label {
+        font-size: 2vh;
+    }
+
+    .campo_input input,
+    .campo_input select {
+        height: 4vh;
+        font-size: 1.8vh;
+    }
+
+    .campo_input button {
+        height: 6vh;
+        font-size: 2vh;
+    }
+
+    #botao1,
+    #botao2 {
+        width: 100%;
     }
 }

@@ -104,16 +104,16 @@ function CadastroUsuario() {
                     <label>CPF:</label>
                     <input type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
 
-                    <button type="submit">Finalizar Inscrição</button>
-                </form>
-
+                    <button type="submit" id='botao'>Finalizar Inscrição</button>
                 <Link to={'/buscarvisitante'}>
                     <button id='botao1'>DESCOBRIR VISITANTES</button>
                 </Link>
 
-                <Link to={'/loginuser'}>
+                <Link to={'/VisitanteLogin'}>
                     <button id='botao2'>LOGIN</button>
                 </Link>
+                </form>
+
             </div>
         </div>
     )

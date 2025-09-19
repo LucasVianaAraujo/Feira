@@ -8,6 +8,8 @@ import Login from './Login.jsx'
 import LoginUser from './LoginUser.jsx'
 import BuscarVisitante from './Buscar.jsx'
 import AdminControl from './DeletarUsuario.jsx'
+import LoginVisitante from './LoginVisitante.jsx'
+import TelaDetalhes from './TelaDetalhes.jsx' 
 
 export default function Navegacao() {
     return (
@@ -21,6 +23,8 @@ export default function Navegacao() {
                 <Route path='/LoginUser' element={<LoginUser />} />
                 <Route path='/BuscarVisitante' element={<BuscarVisitante/>} />
                 <Route path='/AdminControl' element={<AdminControl/>}/>
+                <Route path='/VisitanteLogin' element={<LoginVisitante/>}/>
+                <Route path='/TelaDetalhes' element={<TelaDetalhes/>}/>
             </Routes>
         </BrowserRouter>
     )

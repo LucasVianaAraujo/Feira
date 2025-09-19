@@ -27,8 +27,8 @@
         font-weight: 400;
         font-style: normal;
         font-size: 2.3vh;
-        width: 30vh;
         color: #303261;
+        width: 30vh;
         padding-top: 1.2vh;
     }
 
@@ -72,6 +72,57 @@
 
         button:hover {
             background-color: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .topo {
+        flex-direction: column;
+        height: auto;
+        padding: 2vh;
+
+        .alinhar {
+            padding-right: 0;
+            margin-bottom: 2vh;
+        }
+
+        .conexoes {
+            display: none !important;
+        }
+    }
+
+    .separador {
+        flex-direction: column;
+
+        .lado_esquerdo {
+            width: 100% !important;
+            padding: 3vh;
+            text-align: center;
+
+            h1 {
+                font-size: 4vh !important;
+                width: 100%;
+                background-color: #F5B11B;
+            }
+
+            h3 {
+                font-size: 2.5vh !important;
+                width: 100%;
+            }
+
+            button {
+                width: 30vh;
+                margin: 0 auto;
+            }
+
+            .bloco {
+                margin: 0 auto;
+            }
+        }
+
+        .lado_direito {
+            display: none;
         }
     }
 }

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.fundo_colorido13 {
+    display: flex;
+    flex-direction: column;
+    background-color: #303261;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+
+    .bloco_amarelo {
+        display: flex;
+        background-color: #F5BA53;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 1vh;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        padding: 1vh;
+    }
+
+    h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6vh;
+        color: black;
+    }
+
+    span {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6vh;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    h3 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3.5vh;
+        color: black;
+    }
+
+    p {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6vh;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    .fundo_colorido13 .bloco_amarelo {
+        width: 70%;
+        height: 45vh;
+        padding: 2vh;
+    }
+
+    .fundo_colorido13 h1 {
+        font-size: 4.5vh;
+    }
+
+    .fundo_colorido13 span {
+        font-size: 4.5vh;
+    }
+
+    .fundo_colorido13 h3 {
+        font-size: 3vh;
+    }
+
+    .fundo_colorido13 p {
+        font-size: 4.5vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .fundo_colorido13 {
+        height: auto;
+        padding: 3vh;
+    }
+
+    .fundo_colorido13 .bloco_amarelo {
+        width: 90%;
+        height: auto;
+        padding: 3vh;
+    }
+
+    .fundo_colorido13 h1 {
+        font-size: 3vh;
+    }
+
+    .fundo_colorido13 span {
+        font-size: 3vh;
+    }
+
+    .fundo_colorido13 h3 {
+        font-size: 2.5vh;
+    }
+
+    .fundo_colorido13 p {
+        font-size: 3.5vh;
+        word-break: break-word;
+    }
+}

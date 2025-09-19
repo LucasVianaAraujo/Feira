@@ -37,12 +37,12 @@ export default function LoginUserContact() {
       <div className="bloco_login">
         <label>EMAIL:</label>
         <input value={email} onChange={(e) => setEmail(e.target.value)} />
-        <label>CPF:</label>
+        <label>SENHA:</label>
         <input value={cadastrounico} onChange={(e) => setCadastroUnico(e.target.value)} />
+      <button id='botao-admin' onClick={Enviar}>ACESSAR</button>
       </div>
       <div className="verifica">
       </div>
-      <button onClick={Enviar}>ACESSAR</button>
 
     </div>
   )

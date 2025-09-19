@@ -39,5 +39,22 @@ export async function inserirUsuario(novoUsuario) {
     novoUsuario.ex_aluno,
     novoUsuario.cpf
   ])
+
+  const id = info.insertId;
+
+  const numeroqrcode = Math.floor(100000 + Math.random() * 90000);
+
+  const comando1 = `
+  INSERT INTO qrcode (id_visitante, numero_qrcode)
+  VALUES
+  (?,?)
+  `
+
+  const [info1] = await connection.query(comando1, [
+    id,
+    numeroqrcode
+  ])
+
   return info.insertId;
+
 }

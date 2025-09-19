@@ -35,18 +35,15 @@ export default function BuscarVisitante() {
 
       <button onClick={BuscarVisitanteApi}>BUSCAR</button>
 
-      {resultadoBusca && (
-        <div className="campo_resultados">
-          <div className="dupla_resultado">
-            {resultadoBusca.map((visitante, index) => (
-              <div key={index} className="resultado">
-                <h1>VISITANTE: {visitante.nome}</h1>
-                <h1>PREVISÃO CHEGADA: {visitante.previsao_chegada}</h1>
-              </div>
-            ))}
+      <div className="campo_resultados">
+        {resultadoBusca.map((visitante, index) => (
+          <div key={index} className="resultado">
+            <h1>ID_VISITANTE: {visitante.id_visitante}</h1>
+            <h1>VISITANTE: {visitante.nome}</h1>
+            <h1>PREVISÃO CHEGADA: {visitante.previsao_chegada}</h1>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
 
     </div>
   )
