@@ -1,168 +1,122 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-
-import { Link } from 'react-router';
+import { useState } from 'react'
+import api from './api.js'
+import { Link } from 'react-router'
 
 function CadastroUsuario() {
-    const [usuario, setUsuario] = useState({
-        NOME: '',
-        ESCOLARIDADE: '',
-        INTERESSE_CURSO: '',
-        PREVISAO_CHEGADA: '',
-        EMAIL: '',
-        SABENDO_FEIRA: '',
-        TELEFONE: '',
-        ALUNO_FREI: '',
-        CPF: ''
-    });
+    const [nome, setNome] = useState('')
+    const [escolaridade, setEscolaridade] = useState('')
+    const [interesse_curso, setInteresseCurso] = useState('')
+    const [previsao_chegada, setPrevisaoChegada] = useState('')
+    const [email, setEmail] = useState('')
+    const [sabendo_feira, setSabendoFeira] = useState('')
+    const [telefone, setTelefone] = useState('')
+    const [ex_aluno, setAlunoFrei] = useState('')
+    const [cpf, setCpf] = useState('')
 
-    const [mensagem, setMensagem] = useState('');
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setUsuario(prev => ({ ...prev, [name]: value }));
-    };
-
-    const handleSubmit = (e) => {
+    async function CadastrarAluno(e) {
         e.preventDefault();
 
-        if (!usuario.NOME) {
-            setMensagem('O nome é obrigatório!');
-            return;
-        }
-
-        axios.post('http://localhost:5001/cadastro/novousu', usuario)
-            .then(response => {
-                setMensagem(`Usuário cadastrado com ID: ${response.data.novoId}`);
-                setUsuario({
-                    NOME: '',
-                    ESCOLARIDADE: '',
-                    INTERESSE_CURSO: '',
-                    PREVISAO_CHEGADA: '',
-                    EMAIL: '',
-                    SABENDO_FEIRA: '',
-                    TELEFONE: '',
-                    ALUNO_FREI: '',
-                    CPF: ''
-                });
+        await api.post('/cadastro/novousu', {
+            "nome": nome,
+            "escolaridade": escolaridade,
+            "interesse_curso": interesse_curso,
+            "previsao_chegada": previsao_chegada,
+            "email": email,
+            "sabendo_feira": sabendo_feira,
+            "telefone": telefone,
+            "ex_aluno": ex_aluno,
+            "cpf": cpf
+        })
+            .then(() => {
+                alert('Usuário Cadastrado!');
+                setNome('');
+                setEscolaridade('');
+                setInteresseCurso('');
+                setPrevisaoChegada('');
+                setEmail('');
+                setSabendoFeira('');
+                setTelefone('');
+                setAlunoFrei('');
+                setCpf('');
             })
-            .catch(() => setMensagem('Erro ao cadastrar usuário'));
-    };
-
-    const [nomeBusca, setNomeBusca] = useState('');
-    const [resultadoBusca, setResultadoBusca] = useState('');
-
-    async function BuscarVisitante() {
-        try {
-            const url = `http://localhost:5001/pesquisar/usuario?nome=%${nomeBusca}%`;
-            const resp = await axios.get(url);
-            const dados = resp.data;
-
-            setResultadoBusca(`Usuário Cadastrado: ${dados[0].visitante}`);
-        }
-
-        catch (err) {
-            console.error(err);
-            setResultadoBusca('Erro ao buscar usuário.');
-        }
+            .catch(() => alert('Erro ao cadastrar usuário'));
     }
 
     return (
         <div className="fundo_colorido9">
             <div className="titulo_cadastro">
-                <h2>CADASTRAR</h2>
-                <span>SUA INSCRIÇÃO</span>
+                <h2>CADASTRAR SUA</h2> 
+                <span>INSCRIÇÃO</span>
             </div>
 
             <div className="campo_input">
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label>Nome:</label>
-                        <input type="text" name="NOME" value={usuario.NOME} onChange={handleChange} />
-                    </div>
+                <form onSubmit={CadastrarAluno}>
+                    <label>Nome:</label>
+                    <input type="text" value={nome} onChange={e => setNome(e.target.value)} />
 
-                    <div>
-                        <label>Escolaridade:</label>
-                        <select name="ESCOLARIDADE" value={usuario.ESCOLARIDADE} onChange={handleChange}>
-                            <option value="">Selecione</option>
-                            <option value="Fundamental Completo">Fundamental Completo</option>
-                            <option value="Médio Completo">Médio Completo</option>
-                            <option value="Superior Completo">Superior Completo</option>
-                            <option value="Pós-graduação">Pós-graduação</option>
-                            <option value="Não Alfabetizado">Não Alfabetizado</option>
-                            <option value="Prefiro não informar">Prefiro não informar</option>
-                        </select>
-                    </div>
+                    <label>Escolaridade:</label>
+                    <select value={escolaridade} onChange={e => setEscolaridade(e.target.value)}>
+                        <option value="">Selecione</option>
+                        <option value="Fundamental Completo">Fundamental Completo</option>
+                        <option value="Médio Completo">Médio Completo</option>
+                        <option value="Superior Completo">Superior Completo</option>
+                        <option value="Pós-graduação">Pós-graduação</option>
+                        <option value="Não Alfabetizado">Não Alfabetizado</option>
+                        <option value="Prefiro não informar">Prefiro não informar</option>
+                    </select>
 
-                    <div>
-                        <label>Interesse em algum de nossos cursos?</label>
-                        <select name="INTERESSE_CURSO" value={usuario.INTERESSE_CURSO} onChange={handleChange}>
-                            <option value="">Selecione</option>
-                            <option value="Administração">Administração</option>
-                            <option value="Informática">Informática</option>
-                            <option value="Comunicação Visual">Comunicação Visual</option>
-                            <option value="Eletromecânica de Autos">Eletromecânica de Autos</option>
-                            <option value="Automação Residencial e Robótica">Automação Residencial e Robótica</option>
-                            <option value="Inglês">Inglês</option>
-                            <option value="Eletricista Instalador">Eletricista Instalador</option>
-                            <option value="Instituto">Nenhum</option>
-                        </select>
-                    </div>
+                    <label>Interesse em algum de nossos cursos?</label>
+                    <select value={interesse_curso} onChange={e => setInteresseCurso(e.target.value)}>
+                        <option value="">Selecione</option>
+                        <option value="Administração">Administração</option>
+                        <option value="Informática">Informática</option>
+                        <option value="Comunicação Visual">Comunicação Visual</option>
+                        <option value="Eletromecânica de Autos">Eletromecânica de Autos</option>
+                        <option value="Automação Residencial e Robótica">Automação Residencial e Robótica</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Eletricista Instalador">Eletricista Instalador</option>
+                        <option value="Instituto">Nenhum</option>
+                    </select>
 
-                    <div>
-                        <label>Previsão de Chegada:</label>
-                        <input type="time" name="PREVISAO_CHEGADA" value={usuario.PREVISAO_CHEGADA} onChange={handleChange} />
-                    </div>
+                    <label>Previsão de Chegada:</label>
+                    <input type="time" value={previsao_chegada} onChange={e => setPrevisaoChegada(e.target.value)} />
 
-                    <div>
-                        <label>Email:</label>
-                        <input type="text" name="EMAIL" value={usuario.EMAIL} onChange={handleChange} />
-                    </div>
+                    <label>Email:</label>
+                    <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
 
-                    <div>
-                        <label>Como soube da feira:</label>
-                        <select name="SABENDO_FEIRA" value={usuario.SABENDO_FEIRA} onChange={handleChange}>
-                            <option value="">Selecione</option>
-                            <option value="Instituto">Instituto</option>
-                            <option value="Amigos ou colegas">Amigos ou colegas</option>
-                        </select>
-                    </div>
+                    <label>Como soube da feira:</label>
+                    <select value={sabendo_feira} onChange={e => setSabendoFeira(e.target.value)}>
+                        <option value="">Selecione</option>
+                        <option value="Instituto">Instituto</option>
+                        <option value="Amigos ou colegas">Amigos ou colegas</option>
+                    </select>
 
-                    <div>
-                        <label>Telefone:</label>
-                        <input type="text" name="TELEFONE" value={usuario.TELEFONE} onChange={handleChange} />
-                    </div>
+                    <label>Telefone:</label>
+                    <input type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
 
-                    <div>
-                        <label>Já foi aluno do Instituto?</label>
-                        <select name="ALUNO_FREI" value={usuario.ALUNO_FREI} onChange={handleChange}>
-                            <option value="">Selecione</option>
-                            <option value="Sim">Sim</option>
-                            <option value="Não">Não</option>
-                        </select>
-                    </div>
+                    <label>Já foi aluno do Instituto?</label>
+                    <select value={ex_aluno} onChange={e => setAlunoFrei(e.target.value)}>
+                        <option value="">Selecione</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
 
-                    <div>
-                        <label>CPF:</label>
-                        <input type="text" name="CPF" value={usuario.CPF} onChange={handleChange} />
-                    </div>
+                    <label>CPF:</label>
+                    <input type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
 
                     <button type="submit">Finalizar Inscrição</button>
                 </form>
 
-                {mensagem && <p>{mensagem}</p>}
+                <Link to={'/buscarvisitante'}>
+                    <button id='botao1'>DESCOBRIR VISITANTES</button>
+                </Link>
 
-                    <Link to={'/buscarvisitante'}>
-                        <button id='botao1'>DESCOBRIR VISITANTES</button>
-                    </Link>
-
-                    <Link to={'/loginuser'}>
-                        <button id='botao2'>LOGIN</button>
-                    </Link>
-
+                <Link to={'/loginuser'}>
+                    <button id='botao2'>LOGIN</button>
+                </Link>
             </div>
         </div>
-    );
+    )
 }
 
-export default CadastroUsuario;
+export default CadastroUsuario

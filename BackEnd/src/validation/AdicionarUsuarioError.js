@@ -1,28 +1,28 @@
 export function validarNovoUsuario(novoUsuario) {
-    if (!novoUsuario.NOME)
+    if (!novoUsuario.nome)
         throw new Error('Nome do visitante obrigatório.');
 
-    if (!novoUsuario.ESCOLARIDADE)
+    if (!novoUsuario.escolaridade)
         throw new Error('O campo escolaridade é obrigatório.');
 
-    if (!novoUsuario.INTERESSE_CURSO)
+    if (!novoUsuario.interesse_curso)
         throw new Error('O campo interesse é obrigatório.');
 
-    if (!novoUsuario.PREVISAO_CHEGADA)
+    if (!novoUsuario.previsao_chegada)
         throw new Error('O campo previsão é obrigatório.');
 
-    if (!novoUsuario.EMAIL)
+    if (!novoUsuario.email)
         throw new Error('O campo email é obrigatório.');
 
-    if (!novoUsuario.SABENDO_FEIRA)
+    if (!novoUsuario.sabendo_feira)
         throw new Error('O campo feira é obrigatório.');
 
-    if (!novoUsuario.TELEFONE)
+    if (!novoUsuario.telefone)
         throw new Error('O campo telefone é obrigatório.');
 
-    if (!novoUsuario.ALUNO_FREI)
+    if (!novoUsuario.ex_aluno)
         throw new Error('O campo aluno do frei é obrigatório.');
 
-    if (!novoUsuario.CPF)
+    if (!novoUsuario.cpf)
         throw new Error('O campo cpf é obrigatório.');
 }

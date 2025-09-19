@@ -11,11 +11,12 @@
     .titulo_cadastro {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
 
         h2 {
             display: flex;
-            text-align: center;
-            justify-content: center;
             color: white;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
@@ -23,7 +24,7 @@
         }
 
         span {
-            text-align: center;
+            display: flex;
             color: #F5B11B;
             font-family: "Archivo Black", sans-serif;
             font-weight: 400;
@@ -38,7 +39,6 @@
         flex-direction: column;
         justify-content: center;
         align-self: center;
-        border: black solid 0.5vh;
         background-color: #F5BA53;
         border-radius: 1vh;
         padding: 5vh;

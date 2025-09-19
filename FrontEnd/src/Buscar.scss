@@ -94,6 +94,8 @@
         .dupla_resultado {
             display: flex;
             flex-direction: row;
+            justify-self: center;
+            align-self: center;
             gap: 2vh;
         }
 

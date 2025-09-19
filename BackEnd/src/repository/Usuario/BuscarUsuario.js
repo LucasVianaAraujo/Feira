@@ -30,7 +30,7 @@ export async function BuscarVisitanteFeiraFiltro(nome) {
 
 export async function BuscarVisitanteFeira(nome) {
     const comando = `
-    SELECT * FROM CADASTRO
+    SELECT * FROM CADASTROFEIRA
     WHERE nome
     LIKE ?
     `

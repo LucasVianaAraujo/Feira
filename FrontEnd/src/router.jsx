@@ -7,6 +7,7 @@ import Contato from './Contato.jsx'
 import Login from './Login.jsx'
 import LoginUser from './LoginUser.jsx'
 import BuscarVisitante from './Buscar.jsx'
+import AdminControl from './DeletarUsuario.jsx'
 
 export default function Navegacao() {
     return (
@@ -19,6 +20,7 @@ export default function Navegacao() {
                 <Route path='/Login' element={<Login />} />
                 <Route path='/LoginUser' element={<LoginUser />} />
                 <Route path='/BuscarVisitante' element={<BuscarVisitante/>} />
+                <Route path='/AdminControl' element={<AdminControl/>}/>
             </Routes>
         </BrowserRouter>
     )
